@@ -1,0 +1,195 @@
+body {
+  /* override 8 pixel margin, set margin to 0 for all 4 sides */
+  margin: 0;
+  /* align the text to the center */
+  text-align: center;
+  font-family: "Merriweather", serif;
+  color: #40514e;
+}
+
+h1 {
+  color: #66bfbf;
+  /* use rem to preserve accessibility features */
+  font-size: 5.625rem;
+  /* change the width to 60% note this will de-center the h1 */
+  font-family: "Sacramento", cursive;
+  /* if a block element has a width set, it won't inherit it's parents properties. 
+  Do horizontal centering set the margin to top 0, right auto, bottom 0, left auto 
+  Short hand 0 (for top and bottom) and auto (for right and left) */
+  line-height: 2;
+  margin: 50px auto 0 auto;
+
+  width: 60%;
+}
+
+h2 {
+  color: #66bfbf;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #11999e;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  /* Double the line height of the text */
+  line-height: 2;
+}
+
+hr {
+  /* create a horizontal line rule that is dotted, light grey, and 6 px in width */
+  border: dotted lightblue 6px;
+  /* get rid of the bottom border to have a single dotted line */
+  border-bottom: none;
+  /* change the width of the dotted line length to 4% */
+  width: 4%;
+  /* center the dotted lone by setting top and bottom margin to 100px and left and right to auto */
+  margin: 100px auto;
+  /* frees the hr from floating */
+  clear: both;
+}
+a:hover {
+    /* when a footer link is hovered change it's color to indicate that you can click on it */
+    color: #EAF6F6;
+}
+a {
+    color: #11999e;
+    font-family: "Montserrat", sans-serif;
+    /* space anchor footer links by adding a 10px top and bottom margin and 20px for left and right margin */
+    margin: 10px 20px;
+    /* remove the default underlined link for previously clicked links */
+    text-decoration: none;
+}
+
+.intro {
+  /* change the intro paragraph to a width of 30% of its parent (middle container) */
+  width: 30%;
+  /* set the margin to auto to get it centered in the web page */
+  margin: auto;
+}
+
+.top-container {
+  background-color: #e4f9f5;
+  /* set top container to a relative position so that you can position the cloud relative to this container */
+  position: relative;
+  padding-top: 100px;
+}
+
+/* add a 100px margin fro the top and bottom and 0 for left and right */
+.middle-container {
+  margin: 100px 0;
+}
+
+.contact-message {
+    /* set the text width to 40% */
+    width: 40%;
+    /* center the text by setting the margins. 40px on top, auto for the left and right, and 60px for the bottom */
+    margin: 40px auto 60px;
+}
+
+.copyright {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
+.bottom-container {
+    background-color: #66bfbf ;
+    /* add padding 50px for top 0 for left and right and 20px at the bottom to cover the 16 pixels which is 1em padding for our paragraph */
+    padding: 50px 0 20px;
+}
+
+.pro {
+  /* underline the pro part of programmer */
+  text-decoration: underline;
+}
+
+.top-cloud-img {
+  /* take the coud out of the flow position bottom cloud relative to the top container. Set top container to relative. */
+  position: absolute;
+  /* add a right margin of 300 pixels */
+  right: 300px;
+  /* add a top margin of 40 pixels */
+  top: 40px;
+}
+
+.bottom-cloud-img {
+  /* take the coud out of the flow position bottom cloud relative to the top container. Set top container to relative. */
+  position: absolute;
+  /* add a left margin of 300 pixels */
+  left: 250px;
+  /* add a bottom margin of 50 pixels */
+  bottom: 300px;
+}
+
+.code-img {
+  /* Make the skill image have 25% width of it's parent (skill row) */
+  width: 25%;
+  /* make image flow to the left of the text and make the text wrap around the image */
+  float: left;
+  /* Add 30px of space between the skill text and the image */
+  margin-right: 30px;
+}
+
+.chilli-img {
+  /* Make the skill image have 25% width of it's parent (skill row) */
+  width: 25%;
+  /* make image flow to the right of the text and make the text wrap around the image */
+  float: right;
+  /* Add 30px of space between the skill text and the image */
+  margin-left: 30px;
+}
+
+.skill-row {
+  /* make each skill roll only 50% width of screen */
+  width: 50%;
+  /* restore each skill row centered in the page by using auto */
+  /* Make each skill row have 100px margin top and bottom */
+  margin: 100px auto 100px auto;
+  /* Make the skills text left aligned, this will override the text align center from the body */
+  text-align: left;
+  /* ensures that the elements start below the floats so that the h3 header doesn't get messed up when the window is max */
+  clear: both;
+}
+
+/* .code-skill-description {
+   /* use the clear property to clear its left side to prevent the paragraph from wrapping anything on the left */
+  /* clear: left;
+} */
+
+/* .chilli-skill-description { */
+  /* use the clear property to clear its right side to prevent the paragraph from wrapping anything on the right  */
+  /* clear: right;
+}  */ 
+
+/* use the css3 button generator, change the font to montserrat */
+.btn {
+    background: #11CDD4;
+    background-image: -webkit-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -moz-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -ms-linear-gradient(top, #11CDD4, #11999E);
+    background-image: -o-linear-gradient(top, #11CDD4, #11999E);
+    background-image: linear-gradient(to bottom, #11CDD4, #11999E);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #30E3CB;
+    background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
+    background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
+    background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
+    background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
+    background-image: linear-gradient(to bottom, #30E3CB, #2BC4AD);
+    text-decoration: none;
+  }
